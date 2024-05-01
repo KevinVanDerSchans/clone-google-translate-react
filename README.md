@@ -23,7 +23,7 @@
 
 <br>
 
-**DEPLOY**: <br> https://clon-google-translate-react.vercel.app
+**DEPLOY**: <br> https://clone-google-translate-react.vercel.app
 
 <br>
 <br>
