@@ -51,7 +51,7 @@ function App() {
 
   return (
     <Container fluid>
-      <h2>Clone - Google Translate</h2>
+      <h2 style={{ marginBottom: '20px', color: '#272828' }}>Clone - Google Translate</h2>
 
       <Row>
         <Col>

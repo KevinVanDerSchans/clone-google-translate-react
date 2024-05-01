@@ -3,3 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
 }
+
+body {
+  background: linear-gradient(to top, #00bfff, #e6f8ff);
+  height: 100vh;
+  margin: 0;
+}
+
+title {
+  margin-bottom: 10px;
+}

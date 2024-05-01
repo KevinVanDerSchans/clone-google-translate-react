@@ -8,7 +8,7 @@
   <img
     src="public/readme/project-overview.png"
     alt="Project overview"
-    width="850"
+    width="650"
   >
 </div>
 
@@ -16,13 +16,14 @@
 
 <div>
 
-    Google Translate clone connected to the OpenAI API and built with React, TypeScript, Bootstrap and Vitest.
+    Google Translate clone connected to the OpenAI API and built with
+    React, TypeScript, Bootstrap and Vitest.
 
 </div>
 
 <br>
 
-**DEPLOY**: <br> https://clon-google-translate-react.vercel.app
+**DEPLOY**: <br> https://clone-google-translate-react.vercel.app
 
 <br>
 <br>
