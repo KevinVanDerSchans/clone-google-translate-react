@@ -96,7 +96,7 @@ function App() {
                 loading={loading}
               />
 
-              <div style={{ display: 'flex', position: 'absolute', left: 0, bottom: 0 }}>
+              <div style={{ display: 'flex', position: 'absolute', left: 0, bottom: 0, opacity: '50%' }}>
                 <Button
                   variant='link'
                   onClick={handleClipboard}
