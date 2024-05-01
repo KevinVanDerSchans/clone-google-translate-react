@@ -9,6 +9,7 @@ import { SectionType } from '../../types.d'
 import { TextArea } from '../TextArea/TextArea'
 import { useEffect } from 'react'
 import { translate } from '../../services/translate'
+import { useDebounce } from '../../hooks/useDebounce'
 
 function App() {
   const {
@@ -24,16 +25,18 @@ function App() {
     setToLanguage,
   } = useStore()
 
+  const debouncedFromText = useDebounce(fromText, 300)
+
   useEffect(() => {
-    if (fromText === '') return
+    if (debouncedFromText === '') return
 
     translate({ fromLanguage, toLanguage, text: fromText })
       .then(result => {
         if (result == null) return
         setResult(result)
       })
-      .catch(() => setResult('Error'))
-  }, [fromText, fromLanguage, toLanguage])
+      .catch(() => setResult('Error 429, Too many request'))
+  }, [debouncedFromText, fromLanguage, toLanguage])
 
   return (
     <Container fluid>
