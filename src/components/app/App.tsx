@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Row, Col, Button, Stack } from 'react-bootstrap'
 import './App.css'
 import { AUTO_LANGUAGE } from '../../constants'
-import { ArrowsIcon } from '../Icons/Icons'
+import { ArrowsIcon, ClipboardIcon } from '../Icons/Icons'
 import { LanguageSelector } from '../LanguageSelector/LanguageSelector'
 import { SectionType } from '../../types.d'
 import { TextArea } from '../TextArea/TextArea'
@@ -38,6 +38,10 @@ function App() {
       .catch(() => setResult('Error 429, Too many request'))
   }, [debouncedFromText, fromLanguage, toLanguage])
 
+  const handleClipboard = () => {
+    navigator.clipboard.writeText(result).catch(() => {})
+  }
+
   return (
     <Container fluid>
       <h2>Clon - Google Translate</h2>
@@ -63,7 +67,8 @@ function App() {
           <Button
             variant='link'
             disabled={fromLanguage === AUTO_LANGUAGE}
-            onClick={interchangeLanguages}>
+            onClick={interchangeLanguages}
+          >
             <ArrowsIcon />
           </Button>
         </Col>
@@ -75,12 +80,23 @@ function App() {
               value={toLanguage}
               onChange={setToLanguage}
             />
-            <TextArea
-              type={SectionType.To}
-              value={result}
-              onChange={setResult}
-              loading={loading}
-            />
+
+            <div style={{ position: 'relative' }}>
+              <TextArea
+                type={SectionType.To}
+                value={result}
+                onChange={setResult}
+                loading={loading}
+              />
+
+              <Button
+                variant='link'
+                style={{ position: 'absolute', left: 0, bottom: 0 }}
+                onClick={handleClipboard}
+              >
+                <ClipboardIcon />
+              </Button>
+            </div>
           </Stack>
         </Col>
       </Row>
