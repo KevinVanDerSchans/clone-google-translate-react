@@ -1,7 +1,8 @@
 {
-  "name": "clon-google-translate-react",
+  "name": "clone-google-translate-react",
   "private": true,
   "version": "0.1.0",
+  "description": "Google Translate clone connected to the OpenAI API and built with React, TypeScript, Bootstrap and Vitest",
   "type": "module",
   "scripts": {
     "dev": "vite",

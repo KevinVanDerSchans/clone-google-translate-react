@@ -51,7 +51,7 @@ function App() {
 
   return (
     <Container fluid>
-      <h2>Clon - Google Translate</h2>
+      <h2>Clone - Google Translate</h2>
 
       <Row>
         <Col>

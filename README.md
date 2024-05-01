@@ -1,17 +1,4 @@
-Asignar Tecnologías
-
-Imagen de project-overview
-
-Project description
-
-Añadir Features
-
-Revisar Technologies and Tools used
-
-<br>
-<br>
-
-# Clon Google Translate
+# Clone Google Translate
 
 ## React / TypeScript
 
@@ -29,20 +16,20 @@ Revisar Technologies and Tools used
 
 <div>
 
-Project description
+    Google Translate clone connected to the OpenAI API and built with React, TypeScript, Bootstrap and Vitest.
 
 </div>
 
 <br>
 
-**DEPLOY**: <br> clon-google-translate-react.vercel.app
+**DEPLOY**: <br> https://clon-google-translate-react.vercel.app
 
 <br>
 <br>
 
 # Index
 
-- [Clon Google Translate](#clon-google-translate)
+- [Clone Google Translate](#clone-google-translate)
   - [React / TypeScript](#react--typescript)
 - [Index](#index)
   - [Features](#features)
@@ -54,7 +41,6 @@ Project description
   - [Contribution](#contribution)
   - [Project Status](#project-status)
   - [Project Developer](#project-developer)
-  - [Expanding the ESLint configuration](#expanding-the-eslint-configuration)
 
 <br>
 
@@ -62,7 +48,13 @@ Project description
 
 <div>
 
-    ✔️ Features...
+    ✔️ Translate texts dynamically by selecting between 'English', 'Spanish' and 'Deutsch'
+
+    ✔️ Swap selected languages
+
+    ✔️ Copy translation to clipboard
+
+    ✔️ Speaker to read from the browser the result of translation
 
 </div>
 
@@ -72,10 +64,16 @@ Project description
 
 <div align="center">
   <br>
-    <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="60" height="60" style="margin-right: 24px"/></a>
-    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="60" height="60" style="margin-right: 24px" /></a>
+    <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="./public/readme/react.svg" alt="React" width="60" height="60" style="margin-right: 24px"/></a>
+    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="./public/readme/typescript.svg" alt="Typescript" width="60" height="60" style="margin-right: 24px" /></a>
+    <a href="https://openai.com/" target="_blank" rel="noreferrer"> <img src="./public/readme/openai.svg" alt="OpenAI" width="60" height="60" style="margin-right: 24px"/></a>
   <br>
   <br>
+    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"> <img src="./public/readme/bootstrap.svg" alt="Bootstrap" width="60" height="60" style="margin-right: 24px" /></a>
+  <br>
+  <br>
+    <a href="https://vitest.dev/" target="_blank" rel="noreferrer"> <img src="./public/readme/vitest.svg" alt="Vitest" width="60" height="60" style="margin-right: 24px" /></a>
+    <a href="https://testing-library.com/" target="_blank" rel="noreferrer"> <img src="./public/readme/testinglibrary.svg" alt="Testing Library" width="60" height="60" style="margin-right: 24px" /></a>
 </div>
 
 <br>
@@ -132,36 +130,3 @@ If you want to contribute to this project, follow these steps:
 
 | [<img src="https://avatars.githubusercontent.com/u/122877560?v=4" width=115><br><sub>Kevin Schans</sub>](https://github.com/KevinVanDerSchans) |
 | :--------------------------------------------------------------------------------------------------------------------------------------------: |
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses
-  [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast
-  Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or
-  `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` &
-  `plugin:react/jsx-runtime` to the `extends` list
